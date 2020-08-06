@@ -1,0 +1,118 @@
+.siders-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .left-seder-wrapper {
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        .week-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: #19a0cd;
+            border-radius: 5px;
+            .left-sider-list-wrapper {
+                margin: 0 1rem;
+                .left-sider-list {
+                    width: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                    border-radius: 5px;
+                    padding: 1rem 2rem;
+                    box-shadow: 1px 0 15px 0 #000;
+                    /* width */
+                    &::-webkit-scrollbar {
+                        width: 10px;
+                    }
+
+                    /* Track */
+                    &::-webkit-scrollbar-track {
+                        box-shadow: inset 0 0 5px grey;
+                        border-radius: 10px;
+                    }
+
+                    /* Handle */
+                    &::-webkit-scrollbar-thumb {
+                        background: #7ca1d9;
+                        border-radius: 10px;
+                    }
+
+                    /* Handle on hover */
+                    &::-webkit-scrollbar-thumb:hover {
+                        background: #2136bf;
+                    }
+                    .list-item {
+                        padding: 0.5rem 1rem;
+                        text-align: left;
+                        margin-bottom: 1rem;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        .list-item-day-wrapper {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            .list-item-img-wrapper {
+                                img {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                            .list-item-day-txt-wrapper {
+                                margin-left: 2rem;
+                            }
+                        }
+                        &:hover {
+                            transform: scale(1.01);
+                            transition: 0.2s;
+                            box-shadow: 1px 0 10px 0 #000;
+                        }
+                        .list-item-day-info {
+                            .list-item-day-info-item {
+                                margin-bottom: 0.5rem;
+                            }
+                        }
+                    }
+                    &:first-child {
+                        margin-right: 1rem;
+                    }
+                }
+                .list-item-night {
+                    background-color: #0e59c7;
+                }
+                .list-item-day {
+                    background-color: #19a0cd;
+                }
+            }
+        }
+    }
+
+    .item-today-wrapper {
+        background-color: lightgreen;
+        color: chocolate;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        .item-today-txt-wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 1rem;
+            .item-today-txt-item {
+                vertical-align: middle;
+                padding-right: 5px;
+            }
+        }
+        .item-today-tmp-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .item-today-tmp-info-item {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
